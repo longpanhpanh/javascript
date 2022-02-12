@@ -1,0 +1,16 @@
+// Lấy timestamp hiện tại
+let timestamp = Math.floor(Date.now() / 1000)
+
+// hoặc
+const date = new Date()
+timestamp = Math.floor(date.getTime() / 1000)
+
+// hoặc
+timestamp = Math.floor(+ new Date() / 1000)
+
+// Lấy timestamp mốc thời gian cụ thể
+const date = new Date('00:00:00 01/01/2021')
+timestamp = Math.floor(date.getTime() / 1000)
+
+// hoặc
+timestamp = Math.floor(+ new Date('00:00:00 01/01/2021') / 1000)

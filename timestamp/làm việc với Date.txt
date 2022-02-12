@@ -1,0 +1,11 @@
+Phương thức	Mô tả
+getFullYear()	Trả về năm có gồm 4 chữ số
+getMonth()	Trả về số đại diện cho tháng từ 0-11
+getDate()	Trả về số đại diện cho ngày từ 1-31
+getHours()	Trả về số giờ từ 0-23
+getMinutes()	Trả về số phút từ 0-59
+getSeconds()	Trả về số giây từ 0-59
+getMilliseconds()	Trả về số mili giây từ 0-999
+getTime()	Trả về số mili giây tính từ 00:00:00 01/01/1970
+getDay()	Trả về số đại diện ngày trong tuần từ 0-6
+Date.now()	Trả về số mili giây tính từ 00:00:00 01/01/1970
