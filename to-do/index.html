@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="main">
+      <h1>Todo List</h1>
+      <form class="form-control">
+        <label for="task-id">Enter Task</label>
+        <input
+          id="task-id"
+          type="text"
+          placeholder="Enter your to do task..."
+        />
+        <button id="add-button">Add</button>
+      </form>
+      <div class="task-container">
+        <div>
+          <span>Task 1</span>
+          <button>Clear</button>
+        </div>
+        <div>
+          <span>Task 1</span>
+          <button>Clear</button>
+        </div>
+        <div>
+          <span>Task 1</span>
+          <button>Clear</button>
+        </div>
+        <div>
+          <span>Task 1</span>
+          <button>Clear</button>
+        </div>
+      </div>
+      <p>You have 5 more task to do</p>
+      <button id="clear-button">Clear All</button>
+    </div>
+  </body>
+</html>
