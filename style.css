@@ -4,7 +4,7 @@ body {
 section {
   text-align: center;
 }
-.game--container {
+.game-container {
   display: grid;
   grid-template-columns: repeat(3, auto);
   width: 306px;
