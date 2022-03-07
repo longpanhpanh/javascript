@@ -14,7 +14,7 @@ $(function () {
         $item.find(".product-item").on("click", function () {
           console.log("clicked");
           const url = new URL(
-            `${location.origin.toString()}/shop/product-detail.html`
+            `${location.origin.toString()}/javascript/shop/product-detail.html`
           );
           url.searchParams.set("id", item.id);
           location.href = url;
