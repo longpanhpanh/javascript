@@ -1,35 +1,35 @@
 $(document).ready(function () {
-  var stt = 0;
+  var index = 0;
   var endImg = $("img.slide:last").attr("idx");
 
   $("button").click(function () {
-    stt = $(this).attr("idx");
+    index = $(this).attr("idx");
 
     $("img.slide").hide();
-    $("img.slide").eq(stt).show();
+    $("img.slide").eq(index).show();
     $("button").removeClass("active");
-    $("button").eq(stt).addClass("active");
+    $("button").eq(index).addClass("active");
   });
 
   $("#next").click(function () {
-    if (++stt > endImg) {
-      stt = 0;
+    if (++index > endImg) {
+      index = 0;
     }
 
     $("img.slide").hide();
-    $("img.slide").eq(stt).show();
+    $("img.slide").eq(index).show();
     $("button").removeClass("active");
-    $("button").eq(stt).addClass("active");
+    $("button").eq(index).addClass("active");
   });
 
   $("#prev").click(function () {
-    if (--stt < 0) {
-      stt = endImg;
+    if (--index < 0) {
+      index = endImg;
     }
 
     $("img.slide").hide();
-    $("img.slide").eq(stt).show();
+    $("img.slide").eq(index).show();
     $("button").removeClass("active");
-    $("button").eq(stt).addClass("active");
+    $("button").eq(index).addClass("active");
   });
 });
